@@ -1,3 +1,4 @@
+"""Functions for downloading and reading MNIST data."""
 import gzip
 import os
 from six.moves.urllib.request import urlretrieve
@@ -158,4 +159,4 @@ def read_data_sets(train_dir, fake_data=False, one_hot=False):
     data_sets.train = DataSet(train_images, train_labels)
     data_sets.validation = DataSet(validation_images, validation_labels)
     data_sets.test = DataSet(test_images, test_labels)
-    return data_sets
+return data_sets
